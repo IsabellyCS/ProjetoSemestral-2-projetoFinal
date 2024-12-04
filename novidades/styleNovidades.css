@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+
+}
+.light {
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.regular {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.8;
+}
+.bold {
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.medium-light {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+/* Estilos do Overlay */
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(102, 25, 110, 0.8); /* Cor roxa com 80% de transparência */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1bdf7;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closebtn:hover {
+    filter: brightness(0.8);
+  }
+
+/* Responsividade para telas menores */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.menuzin {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6a9d9;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.logo {
+    width: 115px;
+    margin-left: 30px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+
+.menu {
+    width: 100px;
+    height: 70px;
+    background-color: transparent;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    border: 0;
+    z-index: 70;
+}
+
+.icon_menu {
+    width: 80px;
+}
+.icon_menu:hover {
+    cursor: pointer;
+}
+
+/* Efeito de Hover nos Links */
+.letrinhas {
+    transition: text-decoration 0.3s ease;
+}
+
+.letrinhas:hover {
+    text-decoration: underline white;
+}
+
+header {
+    height: 100px;
+}
+
+
+.container1 {
+    margin: 0px 50px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+/* Contêiner do carrossel */
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+    mask: linear-gradient(to right, transparent, red 10%, red 80%, transparent);
+}
+
+/* Galeria com a animação de rotação contínua */
+.gallery {
+    display: flex;
+    gap: 75px;
+    animation: scrollInfinito 100s linear infinite;
+    will-change: transform;
+    width: max-content; /* Ajuste para garantir que a largura da galeria seja suficiente */
+}
+
+/* Estilo de cada item da galeria */
+.gallery-item {
+    margin: 25px 0px;
+    min-width: 630px;
+    height: 320px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    border: solid 2px #333;
+}
+
+/* Estilo para as informações dentro de cada item */
+.textin {
+    width: 490px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    overflow: visible;
+    position: relative;
+}
+
+/* Animação de rolagem suave */
+@keyframes scrollInfinito {
+    to {
+        transform: translateX(calc(-50% - 5px));
+      }
+}
+
+/* Pause a animação quando o mouse passa sobre o contêiner */
+.gallery-container:hover .gallery {
+    animation-play-state: paused;
+}
+
+
+.img img{
+    height: 320px;
+    width: 210px;
+}
+.data {
+    font-size: 15px;
+    color: #892790;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.materia {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.manchete {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.butao {
+    z-index: 810;
+    cursor: pointer;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(159, 38, 186);
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+    position: static;
+    bottom: 1px;
+    margin-bottom: -7px;
+}
+.butao a{
+    color: white;
+    text-decoration: none;
+}
+.butao:hover {
+    box-shadow: 1px 3px 8px #a4a4a4;
+}
+  
+.genero {
+   border-radius: 25px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   padding: 5px 10px;
+   transition: filter 0.3s ease;
+}
+.genero:hover {
+    filter: brightness(0.9);
+}
+.linha {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 30px;
+    margin-top: 5px;
+}
+.horario {
+    justify-content: left;
+    width: 100%;
+    margin-top: 13px;
+}
+.epic.grande {
+    background-color: rgb(183, 149, 53);
+    width: 45px;
+    height: 20px;
+}
+.epic {
+    background-color: rgb(183, 149, 53);
+    width: 45px;
+    height: 20px;
+}
+.mobile.grande {
+    background-color: rgb(240, 57, 151);
+    width: 60px;
+    height: 15px;
+}
+.mobile {
+    background-color: rgb(240, 57, 151);
+    width: 50px;
+    height: 20px;
+}
+.console.grande {
+    background-color: rgb(4, 144, 135);
+    width: 75px;
+    height: 20px;
+}
+.console {
+    background-color: rgb(4, 144, 135);
+    width: 70px;
+    height: 20px;
+}
+.lancamento.grande {
+    background-color: rgb(131, 80, 17);
+    width: 100px;
+    height: 20px;
+}
+.lancamento {
+    background-color: rgb(131, 80, 17);
+    width: 110px;
+    height: 20px;
+}
+.xbox.grande {
+    background-color: green;
+    width: 80px;
+    height: 20px;
+}
+.xbox {
+    background-color: green;
+    width: 50px;
+    height: 20px;
+}
+.indie.grande {
+    background-color: blueviolet;
+    width: 80px;
+    height: 20px;
+}
+.indie {
+    background-color: blueviolet;
+    width: 45px;
+    height: 20px;
+}
+.steam.grande {
+    background-color: orange;
+    width: 60px;
+    height: 20px;
+}
+.steam {
+    background-color: orange;
+    width: 60px;
+    height: 20px;
+}
+.pc.grande {
+    background-color: rgb(70, 76, 157);
+    width: 45px;
+    height: 20px;
+}
+.pc {
+    background-color: rgb(70, 76, 157);
+    width: 25px;
+    height: 20px;
+}
+h5 {
+    font-size: 18px;
+    color: white;
+    -webkit-user-drag: none; 
+    -moz-user-select: none; 
+    cursor: pointer;
+}
+p {
+    font-size: 20px;
+    margin: 15px 0px;
+}
+.gallery p {
+    height: 20px;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+h2 {
+    font-size: 15px;
+    margin: 5px 0;
+    width: 340px;
+    height: 80px;
+    color: #333;
+    -webkit-user-drag: none; 
+    -moz-user-select: none; 
+}
+.container2 {
+    margin: 35px 20px;
+}
+
+h1 {
+    font-size: 27px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    letter-spacing: 5px;
+}
+
+.titulo {
+    margin-top: 25px;
+    margin-bottom: -5px;   
+}
+.title {
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    color: white;
+}
+h3 {
+    font-family: "Inter", sans-serif;
+}
+h4 {
+    font-size: 12px;
+    color: white;
+    user-select: none;   
+    -webkit-user-drag: none; 
+    -moz-user-select: none; 
+    cursor: pointer;
+}
+h6 {
+    font-size: 15px;
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 45px;
+}
+a {
+    text-underline-offset: 3px;
+}
+
+.fileira {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+    gap: 35px;
+}
+
+.fileira::-webkit-scrollbar {
+    display: none; 
+}
+
+.imagem {
+    height: 250px;
+    width: 340px;
+    user-select: none;      
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    object-fit: cover;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+.saiba, h6 {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    line-height: 1.8;
+    color: black;
+}
+.fileira a {
+    margin-top: 45px;
+}
+.saiba:hover {
+    opacity: 0.7;
+}
+
+.seta-esquerda,
+.seta-direita {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    margin: 10px;
+    background-color: transparent;
+}
+.setas {
+    height: 35px;
+    width: 45px;
+    margin: 0px 5px;
+    object-fit: cover;
+    transition: filter 0.2s ease;
+}
+.setas:hover {
+    filter: brightness(0.8);
+}
+button {
+    background-color: white;
+}
+
+
+
+
+
+
+.voltar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.voltar img{
+    margin-right: 40px;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+.voltar:hover img{
+    cursor: pointer;
+}
+.voltar
+/* Estilos da div */
+#targetDiv {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Um pequeno deslocamento para criar o efeito de deslizamento */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* A transição suave para opacidade e movimento */
+}
+
+/* Classe para tornar a div visível */
+#targetDiv.visible {
+    opacity: 1; /* Torna a div visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+
+
+footer {
+    font-family: "Inter", sans-serif;
+    background-color: #d6a9d9;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.junte {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.trabalhe {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 100px;
+    font-weight: 500;
+    transition: filter 0.3s ease;
+}
+.trabalhe:hover {
+    filter: brightness(0.9);
+}
+
+.icon {
+    width: 60px;
+    margin-left: 20px;
+    transition: scale 0.3s ease;
+}
+.icon:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.junto {
+    margin-top: 60px;
+    
+}
+
+.coisos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+hr {
+    border-top: 5px solid white;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contato {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}

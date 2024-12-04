@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFiles!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../Index/index.html" class="letrinhas">Tela Inicial</a>
+            <a href="../Pesquisa/pesquisa.html" class="letrinhas">Pesquisa</a>
+            <a href="../novidades/novidades.html" class="letrinhas">Novidades</a>
+            <a href="../Sobre/Sobre.html" class="letrinhas">Sobre Nós</a>
+            <a href="../login/login.html" class="letrinhas">Login</a>
+            <a href="../contato/contato.html" class="letrinhas">Contato</a>
+        </div>
+    </div>
+
+    <!-- Cabeçalho e Menu -->
+    <header>
+        <div class="menuzin" id="top">
+            <a href="../Index/index.html">
+                <img src="../Index/img/logo.png" alt="" class="logo">
+            </a>
+            <button class="menu" id="main">
+                <img src="../Index/img/icon_menu.png" alt="" class="icon_menu">
+            </button>
+        </div>
+    </header>
+
+    <h1 class="arrumando dest">Destaques</h1>
+    <div class="jogos">
+        <div class="tabela clickable" data-url="../jogo/Neva.html" >
+            <img src="img/game1_neva.png" alt="" class="games1">
+            <p class="game1titulo">Neva</p>
+            <p class="game1subtitulo">Indie, Aventura, Plataforma</p>
+        </div>
+        <div class="tabela clickable" data-url="../jogo/EDM.html">
+            <img src="img/game1_EDM.png" alt="" class="games1">
+            <p class="game1titulo">Enigma do Medo</p>
+            <p class="game1subtitulo">Puzzle, Terror, Indie</p>
+        </div>
+        <div class="tabela clickable" data-url="../jogo/OMORI.html">
+            <img src="img/game1_omori.png" alt="" class="games1">
+            <p class="game1titulo">OMORI</p>
+            <p class="game1subtitulo">RPG, Aventura, Indie</p>
+        </div>
+    </div>
+
+    <div class="meio">
+        <img src="img/icon_controller.png" alt="" class="icon_meio">
+        <p class="texto_meio">Jogos que quebram as expectativas, prontos para te surpreender. Descubra as recomendações perfeitas para você!</p>
+    </div>
+
+    <div class="Jogos2">
+        <div class="filterDiv Indie Aventura Plataforma">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/nevaimg.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Neva</p>
+                    <p class="game1subtitulo">Indie, Aventura, Plataforma</p>
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Terror Puzzle">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/enigmadomedo.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Enigma do Medo</p>
+                    <p class="game1subtitulo">Indie, Terror, Puzzle</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie RPG Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/omori.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">OMORI</p>
+                    <p class="game1subtitulo">Indie, RPG, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie Narrativa">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/game2_lis.png" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Life Is Strange</p>
+                    <p class="game1subtitulo">Indie, Narrativa Interativa</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie Aventura RPG">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/undertale.png" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Undertale</p>
+                    <p class="game1subtitulo">Indie, Aventura, RPG</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie Puzzle Terror">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/poppyplaytime.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Poppy Playtime</p>
+                    <p class="game1subtitulo">Indie, Puzzle, Terror</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie Terror Ficcao Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/sallyface.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Sally Face</p>
+                    <p class="game1subtitulo">Indie, Terror, Ficção, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie Estrategia">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/bloonstd6.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Bloons TD 6</p>
+                    <p class="game1subtitulo">Indie, Estratégia</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Indie Plataforma Puzzle Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/gris.avif" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Gris</p>
+                    <p class="game1subtitulo">Indie, Plataforma, Puzzle, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Mundo Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/genshimimpact.webp" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Genshin Impact</p>
+                    <p class="game1subtitulo">Mundo Aberto, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Mundo Aventura Narrativa">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/RDR2-ART.webp" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Red Dead Redemption 2</p>
+                    <p class="game1subtitulo">Mundo Aberto, Aventura, Narrativa</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv RPG Plataforma Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/childoflight.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Child of Light</p>
+                    <p class="game1subtitulo">RPG, Plataforma, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Aventura Narrativa Ficcao">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/detroitbecomehuman.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Detroit Become Human</p>
+                    <p class="game1subtitulo">Aventura, Narrativa Interativa, Ficção</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="filterDiv RPG Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/the-witcher-3.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">The Witcher 3: Wild Hunt</p>
+                    <p class="game1subtitulo">RPG, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Estrategia">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/ageOfEmpires.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Age of Empires IV</p>
+                    <p class="game1subtitulo">Estratégia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="filterDiv Mundo Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/horizon.webp" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Horizon Zero Dawn</p>
+                    <p class="game1subtitulo">Mundo Aberto, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Estrategia Ficcao">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/starCraft2.webp" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">StarCraft II</p>
+                    <p class="game1subtitulo">Estratégia, Ficção</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Terror Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/village.webp" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Resident Evil Village</p>
+                    <p class="game1subtitulo">Terror, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Mundo aberto Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/zelda.avif" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">The Legend of Zelda: Breath...</p>
+                    <p class="game1subtitulo">Mundo Aberto, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Puzzle">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/the talos principle 2.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">The Talos Principle 2</p>
+                    <p class="game1subtitulo">Puzzle</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Narrativa interativa">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/heavy-rain.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Heavy Rain</p>
+                    <p class="game1subtitulo">Narrativa Interativa</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Plataforma Aventura">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/celeste.webp" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Celeste</p>
+                    <p class="game1subtitulo">Plataforma, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv Aventura Ficção">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/control.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Control</p>
+                    <p class="game1subtitulo">Ficção Científica, Aventura</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filterDiv RPG Ficção">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/the outer worlds.jpg" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">The Outer Worlds</p>
+                    <p class="game1subtitulo">Ficção Científica, RPG</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="filterDiv Indie Aventura Estrategia">
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/slimerancher2.png" alt="" class="games2">
+                <div class="textin">
+                    <p class="game1titulo">Slime Rancher 2</p>
+                    <p class="game1subtitulo">Indie, Aventura, Estratégia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="filterDiv Ficcao Aventura">
+            <!-- Jogo 1: Ficção Científica -->
+            <div class="tabela clickable" data-url="../jogo/jogo.html">
+                <img src="img/Cyberpunk-2077.jpg" alt="Cyberpunk 2077" class="games2 ">
+                <div class="textin">
+                    <p class="game1titulo">Cyberpunk 2077</p>
+                    <p class="game1subtitulo">Ficção, Aventura</p>
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+    
+    
+    
+
+        <div class="arrumando"><h1>Categorias</h1></div>
+    <div class="categorias clicavel">
+        <div class="categoria" id="RPG" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/cat_rpg.png" alt="">
+            <div class="cat">
+                <p>RPG</p>
+            </div>
+        </div>
+        <div class="categoria clicavel" id="Aventura" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/aventuraImg.jpg" class="teste" alt="">
+            <div class="cat">
+                <p>AVENTURA</p>
+            </div>
+        </div>
+        <div class="categoria clicavel" id="Estrategia" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/cat_estrategia.png" alt="">
+            <div class="cat">
+                <p>ESTRATÉGIA</p>
+            </div>
+        </div>
+    </div>
+    <div class="categorias clicavel">
+        <div class='Terror categoria' id="Terror" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img  src="img/cat_terror.png" alt="">
+            <div class="cat">
+                <p>TERROR</p>
+            </div>
+        </div>
+    
+        
+        <div class="categoria clicavel" id="Mundo" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/cat_aberto.png" alt="">
+            <div class="cat">
+                <p>MUNDO ABERTO</p>
+            </div>
+        </div>
+        <div class="categoria clicavel" id="Puzzle" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/puzzleGame.webp" class="teste" alt="">
+            <div class="cat">
+                <p>PUZZLE</p>
+            </div>
+        </div>
+    </div>
+    <div class="categorias clicavel" >
+        <div class="categoria" id="Narrativa" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/cat_narrativa.png" alt="">
+            <div class="cat">
+                <p>NARRATIVA INTERATIVA</p>
+            </div>
+        </div>
+        <div class="categoria clicavel" id="Plataforma" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/cat_plataforma.png" alt="">
+            <div class="cat">
+                <p>PLATAFORMA</p>
+            </div>
+        </div>
+        <div class="categoria clicavel" id="Ficcao" data-url="../Pesquisa/pesquisa.html" onclick="redirectToPesquisa(this)">
+            <img src="img/ficçãoImg.webp" class="teste" alt="">
+            <div class="cat">
+                <p>FICÇÃO</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="../novidades/novidades.html" class="nov">Novidades</a>
+    <div class="novidades">
+        <div class="novi">
+            <img class="noticiazinha" src="img/not_edm.png" alt="">
+            <p class="not">Enigma do Medo: demo do jogo do Cellbit é lançada...</p>
+            <a href="https://www.theenemy.com.br/pc/enigma-do-medo-baixar">Saiba Mais</a>
+        </div>
+        <div class="novi">
+            <img class="noticiazinha" src="img/not_tomb.png" alt="">
+            <p class="not">Netflix renova Tomb Raider para segunda temporada</p>
+            <a href="https://www.theenemy.com.br/pc/netflix-renova-tomb-raider-para-segunda-temporada">Saiba Mais</a>
+        </div>
+        <div class="novi">
+            <img class="noticiazinha" src="img/not_horizon.png" alt="">
+            <p class="not">Seu PC roda Horizon Zero Dawn Remastered? Veja aqui</p>
+            <a href="https://www.theenemy.com.br/pc/seu-pc-roda-horizon-zero-dawn-remastered-veja-aqui">Saiba Mais</a>
+        </div>
+    </div>
+    <div onclick="scrollToTop()" class="voltar">
+        <div id="targetDiv" class="tag">
+            <img src="../Geral/imgsGerais/SetaVoltarBolinha.png"  alt="">
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="junto">
+            <p class="junte">Junte-se a nós na missão de revelar o potencial dos criadores independentes!</p>
+             <a href="../contato/contato.html" class="trabalhe">Trabalhe conosco</a>
+        </div>
+        <div class="coisos">
+            <div class="contate">
+                <h3>Contate-nos</h3>
+                <hr>
+                <p class="contato">+55 11 99999-9999</p>
+                <p class="contato">gamefiles@gmail.com</p>
+            </div>
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+                <hr>
+                <div class="icones">
+                    <img src="img/icon_insta.png" alt="" class="icon">
+                    <img src="img/icon_twitter.png" alt="" class="icon">
+                    <img src="img/icon_youtube.png" alt="" class="icon">
+                    <img src="img/icon_tiktok.png" alt="" class="icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

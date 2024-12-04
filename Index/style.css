@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat Italico';
+    src: url(font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Inter Italico';
+    src: url(font/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+body {
+    overflow-x: hidden; /* Impede o scroll horizontal */
+}
+
+/* Estilos do Overlay */
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(102, 25, 110, 0.8); /* Cor roxa com 80% de transparência */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1bdf7;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closebtn:hover {
+    filter: brightness(0.8);
+  }
+
+/* Responsividade para telas menores */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.menuzin {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6a9d9;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.logo {
+    width: 115px;
+    margin-left: 30px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+.voltar {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: -40px;
+    padding-bottom: 15px;
+}
+.voltar img{
+    margin-right: 40px;
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+.voltar:hover img{
+    cursor: pointer;
+}
+.voltar
+/* Estilos da div */
+#targetDiv {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Um pequeno deslocamento para criar o efeito de deslizamento */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* A transição suave para opacidade e movimento */
+}
+
+/* Classe para tornar a div visível */
+#targetDiv.visible {
+    opacity: 1; /* Torna a div visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+.menu {
+    width: 100px;
+    height: 70px;
+    background-color: transparent;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    border: 0;
+    z-index: 70;
+}
+
+.icon_menu {
+    width: 80px;
+}
+.icon_menu:hover {
+    cursor: pointer;
+}
+
+/* Efeito de Hover nos Links */
+.letrinhas {
+    transition: text-decoration 0.3s ease;
+}
+
+.letrinhas:hover {
+    text-decoration: underline white;
+}
+
+header {
+    height: 100px;
+}
+
+.jogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 10px;
+
+}
+
+.games1 {
+    width: 425px;
+    height: 715px;
+    border-radius: 10px;
+    max-width: 100%
+}
+
+
+.game1titulo {
+    font-family: 'Inter';
+    color: #906994;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.game1subtitulo {
+    font-family: 'Inter Italico';
+    font-size: 20px;
+}
+
+.meio {
+    background-color: #d6a9d9;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.icon_meio {
+    width: 200px;
+}
+
+.texto_meio {
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 500;
+    width: 530px;
+    margin-left: 340px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.Jogos2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 45px;
+    margin-left: 45px;
+}
+.arrumando {
+    text-align: left;
+    width: 100%;
+}
+
+.games2 {
+    border-radius: 10px;
+    width: 620px;
+    height: 400px;
+    object-fit: cover;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    letter-spacing: 5px;
+    font-family: "Inter", sans-serif;
+    margin-top: 50px;
+}
+.dest {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.nov {
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    letter-spacing: 5px;
+    font-family: "Inter", sans-serif;
+    margin-top: 70px;
+}
+
+.categorias {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.categoria{
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.cat {
+    position: absolute;
+    font-family: 'Inter';
+    font-size: 25px;
+    width: 200px;
+    color: white;
+    top: 40%;
+    left: 25%;
+    text-decoration: underline;
+}
+
+.novidades {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    height: 500px;
+}
+
+.novi {
+    height: 500px;
+
+}
+
+.teste {
+    height: 292px;
+    width: 440px;
+    filter: brightness(0.5);
+}
+
+.not {
+    font-family: 'Inter';
+    font-size: 25px;
+    width: 434px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+a {
+    font-family: 'Inter';
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+footer {
+    background-color: #d6a9d9;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.junte {
+    font-family: 'Inter';
+    font-size: 28px;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.trabalhe {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 100px;
+    font-weight: 500;
+    transition: filter 0.3s ease;
+}
+.trabalhe:hover {
+    filter: brightness(0.9);
+}
+
+.icon {
+    width: 60px;
+    margin-left: 20px;
+    transition: scale 0.3s ease;
+}
+.icon:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.junto {
+    margin-top: 60px;
+}
+
+.coisos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-size: 35px;
+    color: white;
+}
+
+hr {
+    border-top: 5px solid white;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contato {
+    font-family: 'Inter';
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.noticiazinha {
+    height: 270px;
+    width: 430px;
+    object-fit: cover;
+}
+

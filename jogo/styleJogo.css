@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+
+}
+.light {
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    margin-left: 40px;
+}
+.regular {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.bold {
+    font-optical-sizing: auto;
+    font-weight: 800; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    line-height: 1.8;
+}
+.medium-light {
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+/* Estilos do Overlay */
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(102, 25, 110, 0.8); /* Cor roxa com 80% de transparência */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1bdf7;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.closebtn:hover {
+    filter: brightness(0.8);
+  }
+
+/* Responsividade para telas menores */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Estilos do Menu */
+.menuzin {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6a9d9;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.logo {
+    width: 115px;
+    margin-left: 30px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+
+.menu {
+    width: 100px;
+    height: 70px;
+    background-color: transparent;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    border: 0;
+    z-index: 70;
+}
+
+.icon_menu {
+    width: 80px;
+}
+.icon_menu:hover {
+    cursor: pointer;
+}
+
+/* Efeito de Hover nos Links */
+.letrinhas {
+    transition: text-decoration 0.3s ease;
+}
+
+.letrinhas:hover {
+    text-decoration: underline white;
+}
+
+header {
+    height: 100px;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 20px 40px;
+    margin-top: 15px;
+}
+.poster {
+    height: 550px;
+    width: 100%;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+}
+.esquerda {
+    width: 30%;
+    margin: 15px;
+    margin-left: 40px;
+}
+.direita {
+    width: 70%;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.plataformas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+    margin-top: 35px;
+}
+.linha {
+    justify-content: space-evenly;
+    display: flex;
+    gap: 40px;
+}
+
+.plataforma {
+    height: 55px;
+    width: 165px;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.plataformaImg {
+    transition: filter 0.3s ease;
+    transition: scale 0.3s ease;
+}
+.plataformaImg:hover {
+    filter: brightness(0.9);
+    scale: 0.95;
+}
+.estrelinhas {
+    margin-bottom: 25px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.carrossel {
+    background-color: #EFE1FF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+    padding: 20px 15px;
+    margin: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.carrossel img {
+    height: 480px;
+    width: 850px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.carrosselzin {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px 0px 15px;
+    gap: 20px;
+}
+.carrosselzin img{
+    height: 125px;
+    width: 124px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.active,
+.fotinhas:hover {
+  opacity: 1;
+}
+
+.direita h2 {
+    width: 860px;
+}
+.itens {
+    margin-right: 35px;
+    display: flex;
+    white-space: nowrap;
+    width: 1400px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 35px;
+}
+.scroll-container {
+    width: 860px; /* Ajuste conforme necessário */
+    overflow-x: auto; /* Permite o scroll horizontal */
+    white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
+    scrollbar-width: thin; /* Define a largura como fina */
+    scrollbar-color: #dd9aff #f1f1f1; /* Cor do polegar e da pista (polegar primeiro) */
+}
+
+.scroll-content {
+    display: inline-block; /* Permite que os itens sejam dispostos em linha */
+}
+
+.item {
+    display: inline-block; /* Garante que os itens fiquem lado a lado */
+    width: 250px; /* Largura fixa para cada item */
+    height: 340px; /* Altura fixa para cada item */
+    background-color: #ffffff; /* Cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    margin: 10px;
+    margin-top: 0px;
+    text-align: left; /* Centraliza o texto */
+    white-space: wrap;
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
+}
+.item:hover {
+    text-decoration-color: #906994;
+}
+.item .bold {
+    color: #906994;
+    font-size: 20px;
+}
+.recomendados {
+    width: 250px;
+    height: 200px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.titulo {
+    width: 100%;
+    height: 100px;
+}
+footer {
+    background-color: #d6a9d9;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.junte {
+    font-family: 'Inter';
+    font-size: 28px;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.trabalhe {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 100px;
+    font-weight: 500;
+    transition: filter 0.3s ease;
+}
+.trabalhe:hover {
+    filter: brightness(0.9);
+}
+
+.icon {
+    width: 60px;
+    margin-left: 20px;
+    transition: scale 0.3s ease;
+}
+.icon:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.junto {
+    margin-top: 60px;
+}
+
+.coisos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-size: 35px;
+    color: white;
+}
+
+hr {
+    border-top: 5px solid white;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contato {
+    font-family: 'Inter';
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.classificacao {
+    z-index: 10;
+    position: absolute;
+    max-height: 85px;
+    max-width: 85px;
+    right: 23px;
+    bottom: 170px;
+}
+
+
+
+

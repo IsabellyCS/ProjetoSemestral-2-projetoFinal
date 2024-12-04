@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFiles!</title>
+    <link rel="stylesheet" href="pesquisa.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../Index/index.html" class="letrinhas">Tela Inicial</a>
+            <a href="../Pesquisa/pesquisa.html" class="letrinhas">Pesquisa</a>
+            <a href="../novidades/novidades.html" class="letrinhas">Novidades</a>
+            <a href="../Sobre/Sobre.html" class="letrinhas">Sobre Nós</a>
+            <a href="../login/login.html" class="letrinhas">Login</a>
+            <a href="../contato/contato.html" class="letrinhas">Contato</a>
+        </div>
+    </div>
+
+    <!-- Cabeçalho e Menu -->
+    <header>
+        <div class="menuzin" id="top">
+            <a href="../Index/index.html">
+                <img src="../Index/img/logo.png" alt="" class="logo">
+            </a>
+            <button class="menu" id="main">
+                <img src="../Index/img/icon_menu.png" alt="" class="icon_menu">
+            </button>
+        </div>
+    </header>
+
+    <div class="Categorias">
+        <button class="btn" onclick="filterSelection('all')">Mostrar Tudo</button>
+        <button class="btn" onclick="filterSelection('Indie')">Indie</button>
+        <button class="btn" onclick="filterSelection('RPG')">RPG</button>
+        <button class="btn" onclick="filterSelection('Aventura')">Aventura</button>
+        <button class="btn" onclick="filterSelection('Estrategia')">Estratégia</button>
+        <button class="btn" onclick="filterSelection('Terror')">Terror</button>
+        <button class="btn" onclick="filterSelection('Mundo')">Mundo Aberto</button>
+        <button class="btn" onclick="filterSelection('Puzzle')">Puzzle</button>
+        <button class="btn" onclick="filterSelection('Narrativa')">Narrativa Interativa</button>
+        <button class="btn" onclick="filterSelection('Plataforma')">Plataforma</button>
+        <button class="btn" onclick="filterSelection('Ficcao')">Ficção</button>
+    </div>
+
+    <div class="Jogos">
+        <div class="filterDiv Indie Aventura Plataforma">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_neva.png" alt="">
+                <div class="textin">
+                    <h1>Neva</h1>
+                    <p class="sub">Indie, Aventura, Plataforma</p>
+                    <p>Neva conta a história de Alba, uma jovem mulher que, após um encontro traumático com forças das
+                        trevas, cria um vínculo com um curioso filhote...</p>
+                    <img src="img_estrelas/4 estrelas.png" alt="" class="estrela1">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Terror Puzzle">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_edm.png" alt="">
+                <div class="textin">
+                    <h1>Enigma do Medo</h1>
+                    <p class="sub">Indie, Terror, Puzzle</p>
+                    <p>Enigma do Medo é um jogo onde a jovem detetive Mia e seu cãozinho Lupi partem em busca de seu pai
+                        desaparecido.</p>
+                    <img src="img_estrelas/5 estrelas.png" alt="" class="estrela2">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie RPG Aventura">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_omori.png" alt="">
+                <div class="textin">
+                    <h1>OMORI</h1>
+                    <p class="sub">Indie, RPG, Aventura</p>
+                    <p>Na história, o jogador controla um garoto chamado Sunny e seu alter ego Omori. Eles exploram o
+                        mundo real e o mundo dos sonhos para superar seus medos e segredos.</p>
+                    <img src="img_estrelas/5 estrelas.png" alt="" class="estrela3">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Narrativa">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_lis.png" alt="">
+                <div class="textin">
+                    <h1>Life Is Strange</h1>
+                    <p class="sub">Indie, Narrativa Interativa</p>
+                    <p>Maxine Caulfield, uma estudante de fotografia descobre possuir a habilidade de voltar no tempo.
+                    </p>
+                    <img src="img_estrelas/4 estrelas.png" alt="" class="estrela4">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Aventura RPG">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_undertale.png" alt="">
+                <div class="textin">
+                    <h1>Undertale</h1>
+                    <p class="sub">Indie, Aventura, RPG</p>
+                    <p>Um mundo onde no subsolo há uma legião de monstros presos por uma barreira mágica, você é o
+                        humano que caiu no subsolo. E a escolha de perdão ou matança, é sua.</p>
+                    <img src="img_estrelas/5 estrelas.png" alt="" class="estrela5">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Puzzle Terror">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_poppy.png" alt="">
+                <div class="textin">
+                    <h1>Poppy Playtime</h1>
+                    <p class="sub">Indie, Puzzle, Terror</p>
+                    <p>Um jogo de terror onde o jogador joga como um ex-funcionário da Playtime Company que retorna à
+                        agora abandonada.</p>
+                    <img src="img_estrelas/4 estrelas e meia.png" alt="" class="estrela6">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Terror Ficcao Aventura">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_sally.png" alt="">
+                <div class="textin">
+                    <h1>Sally Face</h1>
+                    <p class="sub">Indie, Terror, Ficção, Aventura</p>
+                    <p>Sally Face busca por fantasmas numa tentativa de descobrir a verdade sobre Larry. Uma história
+                        com múltiplos capítulos e arcos.</p>
+                    <img src="img_estrelas/5 estrelas.png" alt="" class="estrela7">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Estrategia">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_bloons.png" alt="">
+                <div class="textin">
+                    <h1>Bloons TD 6</h1>
+                    <p class="sub">Indie, Estrategia</p>
+                    <p>Bloons TD 6 apresenta uma nova categoria de macacos, conhecidos como "heróis", que se tornam mais
+                        fortes ao longo do tempo.</p>
+                    <img src="img_estrelas/4 estrelas.png" alt="" class="estrela8">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Plataforma Puzzle Aventura">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_gris.png" alt="">
+                <div class="textin">
+                    <h1>Gris</h1>
+                    <p class="sub">Indie, Plataforma, Puzzle, Aventura</p>
+                    <p>Gris é uma jovem, perdida em seu próprio mundo. Sua jornada pela tristeza a concede a ela novas
+                        habilidades para navegar melhor por sua realidade.</p>
+                    <img src="img_estrelas/5 estrelas.png" alt="" class="estrela9">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Mundo Aventura">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_genshin.png" alt="">
+                <div class="textin">
+                    <h1>Genshin Impact</h1>
+                    <p class="sub">Mundo Aberto, Aventura</p>
+                    <p>Após ser teleportado para uma nova dimensão, você é separado de sua irmã gêmea, e segue em uma
+                        jornada através das nações de Teyvat.</p>
+                    <img src="img_estrelas/3 estrelas e meia.png" alt="" class="estrela10">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Mundo Aventura Narrativa">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_reddead.png" alt="">
+                <div class="textin">
+                    <h1>Red Dead Redemption 2</h1>
+                    <p class="sub">Mundo Aberto, Aventura, Narrativa...</p>
+                    <p>Depois de tudo dar errado em um roubo, Arthur Morgan e sua gangue são obrigados a fugir.</p>
+                    <img src="img_estrelas/4 estrelas e meia.png" alt="" class="estrela11">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv RPG Plataforma Aventura">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_child.png" alt="">
+                <div class="textin">
+                    <h1>Child of Light</h1>
+                    <p class="sub">RPG, Plataforma, Aventura</p>
+                    <p>A Rainha Negra roubou o Sol, Lua e Estrelas. Uma aventura para recuperar as três fontes, derrotar
+                        a Rainha e restaurar o Reino.</p>
+                    <img src="img_estrelas/4 estrelas e meia.png" alt="" class="estrela12">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Aventura Narrativa Ficcao">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_detroit.png" alt="">
+                <div class="textin">
+                    <h1>Detroit Become Human</h1>
+                    <p class="sub">Aventura, Narrativa Interativa, Ficção</p>
+                    <p>Em 2036 na cidade de Detroit onde androides são comuns, porém as coisas fogem do controle.</p>
+                    <img src="img_estrelas/5 estrelas.png" alt="" class="estrela13">
+                </div>
+            </div>
+        </div>
+        <div class="filterDiv Indie Aventura Estrategia">
+            <div class="tabela">
+                <img class="borda" src="../Index/img_cat/cat_slime.png" alt="">
+                <div class="textin">
+                    <h1>Slime Rancher 2</h1>
+                    <p class="sub">Indie, Aventura, Estratégia</p>
+                    <p>Beatrix LeBeau: uma jovem e corajosa rancheira que parte para uma nova vida a mil anos-luz de
+                        distância da Terra.</p>
+                    <img src="img_estrelas/4 estrelas.png" alt="" class="estrela14">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div onclick="scrollToTop()" class="voltar">
+        <div id="targetDiv" class="tag">
+            <img src="../Geral/imgsGerais/SetaVoltarBolinha.png"  alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="junto">
+            <p class="junte">Junte-se a nós na missão de revelar o potencial dos criadores independentes!</p>
+            <a href="../contato/contato.html" class="trabalhe">Trabalhe conosco</a>
+        </div>
+        <div class="coisos">
+            <div class="contate">
+                <h3>Contate-nos</h3>
+                <hr>
+                <p class="contato">+55 11 99999-9999</p>
+                <p class="contato">gamefiles@gmail.com</p>
+            </div>
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+                <hr>
+                <div class="icones">
+                    <img src="../Index/img/icon_insta.png" alt="" class="icon">
+                    <img src="../Index/img/icon_twitter.png" alt="" class="icon">
+                    <img src="../Index/img/icon_youtube.png" alt="" class="icon">
+                    <img src="../Index/img/icon_tiktok.png" alt="" class="icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pesquisa.js"></script>
+</body>
+
+</html>

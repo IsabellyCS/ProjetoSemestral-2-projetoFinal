@@ -1,0 +1,123 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu fixo no topo */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10; /* Menu fica abaixo da sobreposição */
+}
+
+.menu button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #45a049;
+}
+
+/* Overlay (div que cobre toda a tela, incluindo o menu) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 128, 0.7); /* Cor roxa 70% transparente */
+    display: none; /* Inicialmente oculta */
+    z-index: 20; /* Fica sobre o menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container de conteúdo dentro da overlay */
+.overlay-content {
+    text-align: center;
+    position: relative;
+}
+
+/* Botão de Fechar */
+.btn-fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-fechar:hover {
+    background-color: #e63535;
+}
+
+/* Container de links dentro da overlay */
+.overlay-links {
+    margin-top: 50px; /* Espaçamento entre o botão de fechar e os links */
+}
+
+/* Estilo dos links dentro da overlay */
+.overlay-link {
+    display: block;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.overlay-link:hover {
+    color: #ffeb3b; /* Cor amarela no hover */
+}
+
+/* Estilos para o conteúdo de exemplo */
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.example-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+h1, p {
+    margin-bottom: 20px;
+}
+
+
+

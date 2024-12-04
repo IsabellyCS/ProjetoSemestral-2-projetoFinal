@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento com divs</title>
+    <style>
+        .clickable {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Divs com links dentro do atributo data-url -->
+    <div class="clickable" data-url="../jogo/jogo.html">Clique aqui para o arquivo 1</div>
+    <div class="clickable" data-url="arquivo2.html">Clique aqui para o arquivo 2</div>
+    <div class="clickable" data-url="https://www.exemplo.com">Clique aqui para uma página externa</div>
+
+    <script>
+        // Seleciona todas as divs com a classe 'clickable'
+        const divs = document.querySelectorAll('.clickable');
+        
+        // Adiciona um evento de clique a cada div
+        divs.forEach(div => {
+            div.addEventListener('click', () => {
+                // Redireciona para o URL armazenado no atributo 'data-url'
+                const url = div.getAttribute('data-url');
+                window.location.href = url;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background: url(/img/Amo-te\,\ amo-te\ mais\ \(18\)\ 1.png);
+}
+.quadrado{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 650px;
+    height: 550px;
+    border-radius: 20px;
+    position: relative;
+    left: 450px;
+    border-radius: 40px;
+    border: 3px solid #c1c1c1;
+}
+.Google button{
+    width: 450px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: black;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 40px;
+}
+.insta button{
+    width: 450px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: black;
+}
+.face button{
+    width: 450px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    border-radius: 40px;
+    cursor: pointer;
+}
+a{
+    width: 450px;
+    height: 50px;
+    background-color: #281429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+h2{
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+}
+.quadrado img{
+    position: relative;
+    left: 60px;
+}
+.Google img{
+    position: relative;
+    left: 70px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.Go:hover{
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 1s;
+    border-radius: 40px;
+}
+.in:hover{
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 1s;
+    border-radius: 40px;
+}
+.fa:hover{
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 1s;
+    border-radius: 40px;
+}
+a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.fundo{
+    margin-top: -401px;
+}

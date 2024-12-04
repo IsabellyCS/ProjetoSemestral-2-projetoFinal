@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Inter", sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: #281429;
+    justify-content: right;
+    background: url(/img/Amo-te\,\ amo-te\ mais\ \(18\)\ 1.png);
+}
+.container{
+    width: 500px;
+    height:700px;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #c1c1c1;
+    padding: 0px 60px;
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+.container h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 20px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 3px solid #c1c1c1;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 40px;
+    padding-left: 20px;
+}
+.input-box input::placeholder{
+    color: rgb(255, 255, 255, .2);
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.remember-forgot a{
+position: relative;
+left: 260px;
+}
+.remember-forgot{
+    margin-bottom: 50px;
+}
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.Login{
+    width: 520px;
+    height: 50px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+.Login:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 0.5s;
+}
+.Login a{
+    text-decoration: none;
+    color: unset;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 180px;
+    margin-top: 200px;
+}
+.container2 h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.container2 h2{
+    color: #fff; 
+}
+.text{
+    display: flex;
+    margin-bottom: 80px;
+}
+.text h2{
+    display: flex;
+    margin-top: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.container2 p{
+    font-size: 40px;
+    width: 450px;
+    color: #fff;
+}
+.imagem{
+    display: flex;
+    position: relative;
+    right: 190px;
+    margin-top: -550px;
+    font-size: 30px;
+}
